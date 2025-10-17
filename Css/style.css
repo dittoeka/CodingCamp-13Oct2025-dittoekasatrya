@@ -1,0 +1,68 @@
+/* =========================================
+   TO-DO LIST PROJECT STYLES
+   Author: Ditto Eka Satrya
+   ========================================= */
+
+/* Page layout */
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: #f1f5f9; /* Tailwind slate-100 */
+  font-family: 'Inter', sans-serif;
+}
+
+/* Main container */
+main {
+  width: 90%;
+  max-width: 700px;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  border: 2px solid #9ca3af; /* gray-400 */
+  padding: 0.75rem;
+  text-align: center;
+}
+
+/* Header cells */
+th {
+  background-color: #e5e7eb; /* gray-200 */
+  font-weight: 600;
+}
+
+/* Limit long task names */
+td.task-name {
+  max-width: 220px;
+  overflow-wrap: break-word;
+  white-space: normal;
+  word-break: break-word;
+}
+
+/* Buttons styling */
+button {
+  transition: all 0.15s ease;
+}
+
+/* Button click animation */
+button:active {
+  border: 2px solid #2563eb; /* blue-600 */
+  transform: scale(0.96);
+}
+
+/* Center footer text */
+footer {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #6b7280; /* gray-500 */
+}

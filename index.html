@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List - Ditto</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS External File -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1 class="text-6xl font-bold">To-do List</h1>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <section class="todo-app my-4">
+            <input type="text" class="border rounded p-2" id="todo-input" placeholder="Add a new task..." />
+            <input type="date" class="border rounded p-2" id="todo-date" placeholder="Select due date..." />
+            <button class="px-4 py-2 rounded-lg text-white font-semibold
+    bg-blue-500 hover:bg-blue-600 active:ring-4 active:ring-blue-300
+    transition-all duration-150 focus:outline-none" onclick="addTask();">Add Task</button>
+        </section>
+
+        <!-- Action Buttons Section -->
+        <section class="flex justify-between my-4">
+            <button class="px-4 py-2 rounded-lg text-white font-semibold
+    bg-red-500 hover:bg-red-600 active:ring-4 active:ring-red-300
+    transition-all duration-150 focus:outline-none" onclick="deleteAllTasks();">Delete All Tasks</button>
+        </section>
+<br><br>
+        <section class="my-4 w-full max-w-2xl">
+    <h2 class="text-2xl mb-2">List of Tasks</h2>
+   <table class="border-collapse border border-gray-400 w-3/4 text-center">
+  <thead>
+    <tr class="bg-gray-200 font-semibold">
+      <th class="border border-gray-400 p-2 text-center w-2/3">Task Name</th>
+      <th class="border border-gray-400 p-2 text-center w-1/3">Due Date</th>
+    </tr>
+  </thead>
+  <tbody id="task-list">
+        <tr>
+         <td colspan="2" class="text-center p-2 text-gray-500">No tasks added yet</td>
+        </tr>
+     </tbody>
+    </table>
+</section>
+
+
+    <!-- Footer Section -->
+    <footer>
+        <p class="text-sm">&copy; 2025 Ditto Eka Satrya</p>
+    </footer>
+
+    <!-- Javascript External File -->
+    <script src="js/script.js"></script>
+</body>
+
+
+
+</html
